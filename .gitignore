@@ -1,0 +1,10 @@
+# Dev-only notes and checklists
+dev-notes/
+
+# Local editor / OS files
+.DS_Store
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
