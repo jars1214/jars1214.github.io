@@ -159,6 +159,45 @@ body {
   text-decoration: underline;
 }
 
+/* Expandable project cards */
+details.project-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+details.project-card[open] {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+details.project-card summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details.project-card summary::-webkit-details-marker {
+  display: none;
+}
+
+details.project-card summary h3 {
+  margin: 0;
+}
+
+.project-details {
+  margin-top: 1rem;
+}
+
+.project-details img {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+
 .button {
   display: inline-block;
   margin-top: 1rem;
